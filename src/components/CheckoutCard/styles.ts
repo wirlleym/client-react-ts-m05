@@ -16,15 +16,18 @@ export const CheckoutCardHeader = styled.div`
     height: 3rem;
     display: flex;
     margin-bottom: 0.625rem;
+
     img {
       width: 2.5rem;
       height: 2.5rem;
       margin-right: 0.625rem;
     }
+
     div {
       width: calc(100% - 6.125rem);
       height: 100%;
       line-height: 140%;
+
       h5 {
         width: 8.75rem;
         height: 1.125rem;
@@ -33,6 +36,7 @@ export const CheckoutCardHeader = styled.div`
         overflow: hidden;
       }
     }
+
     span {
       min-width: 3.5rem;
       padding-left: 1.25rem;

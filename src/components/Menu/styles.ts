@@ -10,13 +10,15 @@ interface MenuItemButtonProps {
 }
 
 export const MenuContainer = styled.div`
-  height: 100vh;
   min-width: 6.5rem;
+  height: 100vh;
   border-radius: 0 16px 16px 0;
   background-color: #1f1d2b;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+
   img {
     width: 4rem;
     margin: 1.25rem 0;
@@ -33,6 +35,7 @@ export const MenuItem = styled.div<MenuItemProps>`
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-radius: 12px 0px 0px 12px;
 
   ${({ logout }) =>

@@ -5,11 +5,14 @@ interface CategoriesNavigationButtonProps {
 }
 
 export const HomeContainer = styled.div`
-  // height: 100vh;
-  width: 100%;
-  display: flex;
-  background-color: #252836;
-  color: #fff;
+  ${({ theme }) => css`
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: #000000;
+    overflow-y: scroll;
+    background-color: ${theme.colors.baseBg3};
+  `}
 
   section {
     width: 100%;
@@ -24,6 +27,7 @@ export const HomeContainer = styled.div`
 
 export const HomeContentContainer = styled.div`
   width: calc(100% - 518px);
+  padding-left: 6.5rem;
 `;
 
 export const HomeContentHeader = styled.header`
@@ -49,27 +53,29 @@ export const TitleContainer = styled.div`
 `;
 
 export const SearchInputContainer = styled.div`
-  width: 173px;
-  height: 48px;
-  background: #2d303e;
-  border: 1px solid #393c49;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  gap: 10px;
+  ${({ theme }) => css`
+    width: 173px;
+    height: 48px;
+    border: 1px solid #393c49;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 10px;
+    background: ${theme.colors.baseForm};
 
-  input {
-    background: #2d303e;
-    width: 120px;
-    height: 38px;
-    color: #ffffff;
-    font-size: 14px;
+    input {
+      background: ${theme.colors.baseForm};
+      width: 120px;
+      height: 38px;
+      color: #ffffff;
+      font-size: 14px;
 
-    :focus {
-      outline: none;
+      :focus {
+        outline: none;
+      }
     }
-  }
+  `}
 `;
 
 export const CategoriesNavigationBar = styled.div`
@@ -80,16 +86,21 @@ export const CategoriesNavigationBar = styled.div`
 `;
 
 export const CategoriesNavigationButton = styled.button<CategoriesNavigationButtonProps>`
-  color: #393c49;
-  border: 0;
-  cursor: pointer;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-  margin-right: 0.4rem;
-  background-color: #252836;
+  ${({ theme }) => css`
+    border: 0;
+    cursor: pointer;
+    min-width: 80px;
+    min-height: 38px;
+    border-radius: 8px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    margin-right: 0.4rem;
+    background-color: ${theme.colors.baseBg1};
+    color: ${theme.colors.textColor};
+  `}
 
   :hover {
-    color: #ffffff;
+    color: #6cea69;
   }
 
   ${({ active }) =>
@@ -106,21 +117,36 @@ export const ProductsHeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1.5rem;
   padding: 0 2rem;
   box-sizing: border-box;
 `;
 
 export const TableSelect = styled.select`
-  width: 165px;
-  height: 48px;
-  background-color: #e26b6b;
-  border: 1px solid #393c49;
-  border-radius: 8px;
-  color: #ffffff;
-  padding: 0 1rem;
-  box-sizing: border-box;
+  ${({ theme }) => css`
+    width: 165px;
+    height: 38px;
+    background-color: ${theme.colors.baseBg1};
+    border: 1px solid ${theme.colors.baseLine};
+    border-radius: 8px;
+    color: ${theme.colors.textColor};
+    cursor: pointer;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='red' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
 
-  :focus {
-    outline: none;
-  }
+    :focus {
+      outline: none;
+    }
+
+    option {
+      :hover {
+        background-color: ${theme.colors.baseBg4} !important;
+      }
+    }
+  `}
 `;

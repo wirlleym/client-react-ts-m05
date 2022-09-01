@@ -160,13 +160,11 @@ export const AddEntityCard = styled.div`
 `;
 
 export const ConfirmationContainer = styled.div`
-  ${({ theme }) => css`
-    width: 100%;
-    height: 7.5rem;
-    padding-left: 1.5rem;
-    padding-top: 3.125rem;
-    box-sizing: border-box;
-    display: flex;
-    gap: 1rem;
-  `}
+  width: 100%;
+  height: 7.5rem;
+  padding-left: 1.5rem;
+  padding-top: 3.125rem;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1rem;
 `;

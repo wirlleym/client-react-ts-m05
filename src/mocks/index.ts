@@ -132,20 +132,38 @@ export const mockedProducts: T.Product[] = [
 
 export const mockedCategories: T.Category[] = [
   {
-    id: "ef215c07-a2e4-495c-9e0f-5c10cc971d11",
-    name: "Lanches",
-    createdAt: new Date(),
-    updatedAt: new Date(),
-  },
-  {
-    id: "a6e86fe9-ca7f-40a3-9b95-331e749038f1",
-    name: "Porções",
-    createdAt: new Date(),
-    updatedAt: new Date(),
-  },
-  {
-    id: "1c86eac1-f2b9-4bdf-8dc9-21bcd789da4f",
+    id: "583fa0da-0750-4ce3-9911-3aa259ef429e",
     name: "Bebidas",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: "878ff237-0f9f-40d8-a236-9076f03efe67",
+    name: "Burguers",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: "1945902c-e3cd-4198-a0c4-26793a832e04",
+    name: "Combos",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: "7d8509e8-8d65-4d42-91d6-4bea3b29b62c",
+    name: "Pizzas (Doce)",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: "2ef3414c-fe18-4b90-ba68-02ca15e53d3e",
+    name: "Pizzas (Salgada)",
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    id: "def63d5b-8630-4743-b295-17fe0c0619c3",
+    name: "Sobremesas",
     createdAt: new Date(),
     updatedAt: new Date(),
   },
@@ -187,9 +205,9 @@ export const mockedTables: T.Table[] = [
 export const mockedUsers: T.User[] = [
   {
     id: "6d6cf9d2-cf94-4b90-a53b-973d92501e02",
-    name: "Ivan Borba",
-    email: "ivan@blue.com",
-    password: "7ccbf779f22b9579f80ba3afebcb0e7e",
+    name: "Wirlley",
+    email: "wirlley@gmail.com",
+    password: "$2a$08$9p.HyTA1QLzCUVrdy/qezuoM4JsICrVr4vhyIxdqxtCGEzB62SEa6",
     createdAt: new Date(),
     updatedAt: new Date(),
   },
@@ -198,14 +216,14 @@ export const mockedUsers: T.User[] = [
 export const mockedFavorites: T.Favorite[] = [
   {
     id: "35abf7f1-c999-4bcf-abfb-a95cb483a2b9",
-    productName: "Burguer Salada e Queijo Especial",
-    userId: "6d6cf9d2-cf94-4b90-a53b-973d92501e02",
+    productName: "Burguer Salada",
+    userId: "64bb9795-bb33-4e0f-8344-87a57ff30047",
     favoritedAt: new Date(),
   },
   {
     id: "9a5a8f0e-43aa-4d77-8afd-e3a95deddc81",
-    productName: "Burguer Duplo Bacon e Cheddar",
-    userId: "6d6cf9d2-cf94-4b90-a53b-973d92501e02",
+    productName: "Burguer Carne e Frango",
+    userId: "64bb9795-bb33-4e0f-8344-87a57ff30047",
     favoritedAt: new Date(),
   },
 ];
