@@ -6,6 +6,8 @@ export const colors = {
 
   baseBg1: "#252836",
   baseBg2: "#1F1D2B",
+  baseBg3: "#fff8dc",
+  baseBg4: "#d2d2d2",
   baseForm: "#2D303E",
   baseLine: "#393C49",
 

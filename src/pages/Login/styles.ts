@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import backgroundPattern from "../../assets/logo_patterns/food-pattern.jpg";
+import backgroundPattern from "../../assets/logo_patterns/logo-fundo.jpg";
 
 export const LoginPageContainer = styled.div`
   ${({ theme }) => css`
@@ -9,10 +9,11 @@ export const LoginPageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    }
   `}
 `;
 
-export const LoginFormContainer = styled.div`
+export const LoginFormContainer = styled.form`
   ${({ theme }) => css`
     width: 24rem;
     height: 28.875rem;
@@ -25,6 +26,7 @@ export const LoginFormContainer = styled.div`
     justify-content: space-around;
     padding: 2rem 0;
     box-sizing: border-box;
+    opacity: 0.9;
   `}
 `;
 

@@ -34,19 +34,19 @@ export const StyledButton = styled.button<StyledButtonProps>`
       border: 1px solid ${theme.colors.secondaryColor};
       box-shadow: none;
     `}
-    
+
     ${size === "small" &&
     css`
       height: 2.125rem;
       padding: 0 0.75rem;
       width: 7.25rem;
     `}
-    
+
     ${size === "large" &&
     css`
       width: 18.625rem;
     `}
-    
+
     ${size === "x-large" &&
     css`
       width: 22.5rem;
